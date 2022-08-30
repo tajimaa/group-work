@@ -69,7 +69,7 @@ function anser(num) {
             s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
             s += "【<a href = ''>次の問題に進む</a>】";
             document.getElementById("text_s").innerHTML = s;
-         }//改良案の前までやりました。
+         }
      }
 }
 const text_s = document.getElementById('text_s');
