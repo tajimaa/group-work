@@ -69,7 +69,7 @@ function anser(num) {
             s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
             s += "【<a href = ''>次の問題に進む</a>】";
             document.getElementById("text_s").innerHTML = s;
-         }//改良案の前までやりました。
+         }
      }
 }
 const text_s = document.getElementById('text_s');
@@ -77,14 +77,14 @@ const text_s = document.getElementById('text_s');
 //マウスが要素上に入った時
 text_s.addEventListener('mouseover', () => {
   
-    text_s.style.text = '#000000';
+    text_s.style.text = '#008000';
   
 }, false);
 
 //マウスが要素上から離れた時
 text_s.addEventListener('mouseleave', () => {
   
-    text_s.style.text = '#0091EA';
+    text_s.style.text = '#008000';
   
 }, false);
 
