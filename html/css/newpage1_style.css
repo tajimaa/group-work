@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+html{
+ font-size: 100%;
+}
+body {
+ font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+ line-height: 1.8;
+ color: #fff;
+}
+/*ヘッダー*/
+.logo {
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 30px;
+   } 
+   .main-nav{
+       display: flex;
+    font-size: 1.25rem;
+       flex-wrap: wrap;
+       margin-top: 50px;
+       list-style: none;
+   }
+   
+   .main-nav li a{
+       display: block;
+       text-decoration: none;
+       color: #fff;
+    line-height:1;
+   }
+   
+   .main-nav li{
+       margin-bottom:0px;
+   }
+   
+   .main-nav li a{
+       
+     position: relative;
+       
+     overflow: hidden;
+     padding:20px 80px;
+   }
+   
+   .main-nav li span{
+       
+     position: absolute;
+     left: 50%;
+     top:0;
+       
+     transition: all .5s;
+     transform: translate(-50%, 0);
+       
+     display: block;
+     opacity:1;
+     white-space: nowrap;
+   }
+   
+   .main-nav li span:nth-child(2){
+     opacity:0;
+       transform: translate(-50%,100%);
+   }
+   
+   
+   .main-nav li:hover span:nth-child(1){
+     opacity:0;
+       transform: translate(-50%,-100%);
+   }
+   
+   .main-nav li:hover span:nth-child(2){
+     opacity:1;
+     transform: translate(-50%, 0);
+   }
+   .page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+   }
+   .wrapper{
+    margin: 0 auto;
+    padding: 0 4%;
+   }
+   .home-content{
+    text-align: center;
+    margin-top: 12%;
+   }
+   
+   .big-bg{
+    width: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-image: url(../img/background.png);
+    min-height: 100vh;
+   }
+   
+   
+   .container{
+    /*display:flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    position:relative;
+    width: 100%;
+    min-height:100vh;
+    
+    overflow: hidden;
+     }
+     
+   
+   /*見出し*/
+   
+   
+     
+    
+    
+    
+     /*** 装飾用 ***/
+   
+   .page-title h2{
+    
+    font-size: 4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-transform: uppercase;
+    font-weight:normal;
+    color: #fff;
+    border-bottom:3px solid #fff;
+    padding-left: 0%;
+    border:3px solid #fff;
+   }
+   .page-title p{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    border-bottom: 3px #fff;
+    
+   }
+   
+   
+   /* From uiverse.io */
+   
+   .c-button {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    margin-top: 200px;
+    
+      }
+      
+      .c-button--gooey {
+    color: #06c8d9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #06c8d9;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+      }
+      
+      .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+      }
+      
+      .c-button--gooey .c-button__blobs div {
+    background-color: #06c8d9;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+      }
+      
+      .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+      }
+      
+      .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+      }
+      
+      .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+      }
+      
+      .c-button--gooey:hover {
+    color: #fff;
+      }
+      
+      .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+      }
+      
+   
+   .contet-wrapper{
+    position: center;
+    width: 90%;
+    /*min-height: 100vh;*/
+    background-color:rgb(49, 49, 49);
+    margin: auto;
+    margin-top: 130px; 
+    padding: 1rem;
+   
+   }
+   /*スライド*/
+   .slide{
+    position: relative;
+    width: 30%;
+    padding-top: 30%;
+   }
+   .slide img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0; 
+    opacity: 0;
+    animation:slideshow 24s linear infinite;
+   }
+   .slide img:nth-child(2){
+    animation-delay: 8s;
+   }
+   .slide img:nth-child(3){
+    animation-delay: 16s;
+   }
+   @keyframes slideshow{
+    0%{
+     opacity: 0;
+    }
+    10%{
+     opacity: 1;
+    }
+    28%{
+     opacity: 1;
+    }
+    38%{
+     opacity: 0;
+    }
+    100%{
+     opacity: 0;
+    }
+   }
+   
+   .container-1{
+    display: flex;
+    justify-content: space-between;
+   }
+   #heading{
+    position: center;
+   }
+   #heading {
+    position: relative;
+    line-height: 1.4;
+    display: inline-block;
+     }
+   #heading:before, #heading:after { 
+    position: relative;
+    
+    font-weight: 900;
+    display: inline-block;
+    font-size: 0.5em;
+    color: #ff6a6a;
+     }
+     #heading:before {
+    content:"\f053";
+    padding-right: 0.5em
+     }
+     #heading:after {
+    content:"\f054";
+    padding-left: 0.5em
+     }
