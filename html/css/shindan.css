@@ -142,7 +142,11 @@ body {
   margin: auto;
   width: 80%;
   min-height: 500px;
-  margin-top: 70px;
+  margin-top: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .button15 a {
@@ -193,12 +197,35 @@ body {
 
 }
 
+.box1{
+  margin:2em 0;
+  position: relative;
+  padding: 0.5em 1.5em;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+
+}
+.box1:before, .box1:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 5px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: black;
+}
+.box1:before {left: 10px;}
+.box1:after {right: 10px;}
+.box1 p {
+  margin: 0; 
+  padding-top: 10px;
+}
+
 
 
 /*-----------------フッター-------------------*/
 .wrapper{
-  height: 100%;
-  min-height: 100vh;
+
   position: relative;/*←相対位置*/
   padding-bottom: 120px;/*←footerの高さ*/
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
@@ -213,4 +240,9 @@ footer{
 
   position: absolute;/*←絶対位置*/
   bottom: 0; /*下に固定*/
+  margin-top: 100px;
+}
+footer {
+  position: sticky;
+  top: 100vh;
 }
