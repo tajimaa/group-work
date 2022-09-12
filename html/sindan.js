@@ -53,22 +53,39 @@ function anser(num) {
         }else {
              //終了
             if (ansers >= 2500) {
-                 s = "超すげーはいぱぱそこん";
+                s = "超すげーはいぱぱそこん";
+                document.getElementById("text_q").innerHTML = s;
+                //次の選択肢
+                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = ''>詳細を見る</a>】";
+                document.getElementById("text_s").innerHTML = s;
+
             } else if(ansers >= 1700) {
                 s = "すげーぱそこん";
+                document.getElementById("text_q").innerHTML = s;
+                //次の選択肢
+                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = ''>詳細を見る</a>】";
+                document.getElementById("text_s").innerHTML = s;
             } else if(ansers >= 1200) {
                 s = "そこそこぱそこん";
+                document.getElementById("text_q").innerHTML = s;
+                //次の選択肢
+                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = ''>詳細を見る</a>】";
+                document.getElementById("text_s").innerHTML = s;
             }else {
                 s = "ザコぱそ";
-            }
-
-    
-            document.getElementById("text_q").innerHTML = s;
-            //次の選択肢
-            s = "【<a href = 'javascript:history.back()'>前のページに戻る</a>】";
-            s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
-            s += "【<a href = ''>次の問題に進む</a>】";
-            document.getElementById("text_s").innerHTML = s;
+                document.getElementById("text_q").innerHTML = s;
+                //次の選択肢
+                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s += "【<a href =  'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = ''>詳細を見る</a>】";
+                document.getElementById("text_s").innerHTML = s;
+            }   
          }
      }
 }
