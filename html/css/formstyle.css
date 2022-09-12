@@ -1,164 +1,193 @@
-@charset "UTF-8";
 
-html{
-	font-size: 100%;
-}
-body {
-	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
-	line-height: 1.8;
-	color: #fff;
-	background-image: url("haikei.jpeg");
-	background-size: cover;
-}
-/*ヘッダー*/
-.logo {
-	width: 100px;
-	margin-top: 14px;
-	margin-left: 30px;
-	margin-bottom: 0px;
-}	
+/*========= particle js を描画するエリア設定 ===============*/
 
-.main_content{
-	text-align: center;
-	padding-top: 0px;
+#particles-js {
+   position: fixed; /*描画固定*/
+   z-index: -1; /*描画を一番下に*/
+   width: 100%;
+   height: 100%;
+   background-color: rgb(34, 58, 71); /*背景色*/
+ }
+ 
+ #wrapper {
+   position: relative; /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+   z-index: 1; /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+   width: 100%;
+   height: 100%;
+   min-height: 100vh;
+   padding-bottom: 120px;
+   box-sizing: border-box;
+ }
+ 
+ 
+ /*------------------------------HTML----------------------------*/
+ 
+ html{
+     font-size: 100%;
+   color: rgb(255, 251, 251);
+ }
+ body {
+     font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+     line-height: 1.8;
+     color: rgb(249, 249, 249);
+     height: 100%;
+ }
+ 
+ /*-----------------------------ヘッダー--------------------*/
+ .logo {
+     width: 150px;
+     margin-top: 20px;
+     margin-left: 30px;
+ }	
+ .main-nav{
+     display: flex;
+     font-size: 1.25rem;
+     flex-wrap: wrap;
+     margin-top: 50px;
+     list-style: none;
+ }
+ 
+ .main-nav li a{
+     display: block;
+     text-decoration: none;
+     color: #fff;
+     line-height:1;
+ }
+ 
+ .main-nav li{
+     margin-bottom:0px;
+ }
+ 
+ .main-nav li a{
+     
+   position: relative;
+     
+   overflow: hidden;
+   padding:20px 80px;
+ }
+ 
+ .main-nav li span{
+     
+   position: absolute;
+   left: 50%;
+   top:0;
+     
+   transition: all .5s;
+   transform: translate(-50%, 0);
+     
+   display: block;
+   opacity:1;
+   white-space: nowrap;
+ }
+ 
+ .main-nav li span:nth-child(2){
+   opacity:0;
+     transform: translate(-50%,100%);
+ }
+ 
+ .main-nav li:hover span:nth-child(1){
+   opacity:0;
+     transform: translate(-50%,-100%);
+ }
+ 
+ .main-nav li:hover span:nth-child(2){
+   opacity:1;
+   transform: translate(-50%, 0);
+ }
+ .page-header {
+     display: flex;
+     justify-content: space-between;
+     height: 100px;
+ }
+ /*-----------------ページ本文-------------------*/
+ .textlines {
+   padding: 0.5em;
+   background-color: snow;
+   width: 40em;
+   height: 250px;
+   font-size: 1em;
+   line-height: 1.2;
+   margin-top: 30px;
+   position: center;
+   border-radius: 8px;
+   margin-left: 13%;
+   color:#000;
 }
-
-.main-nav{
-    display: flex;
-	font-size: 1.25rem;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    list-style: none;
+#mail {
+  /* input要素全部に対して装飾 */
+  background-image: linear-gradient(0deg, #a260bf, #a7d9f5);
+  border: 1px solid #3c7fb1;
+  padding: 0.3em;
+  width: 100px;
+  transform: translate(200px, 340px)
+  
+  }
+#mail:hover {
+  /* マウスが上に載ったとき */
+  background-image: linear-gradient(0deg, #68d3db, #e5f4fc);
+  border: 1px solid #2c628b;
 }
-
-.main-nav li a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-	line-height:1;
-}
-
-.main-nav li{
-    margin-bottom:0px;
-}
-
-.main-nav li a{
-    
-  position: relative;
-    
-  overflow: hidden;
-  padding:20px 80px;
-}
-
-.main-nav li span{
-    
-  position: absolute;
-  left: 50%;
-  top:0;
-    
-  transition: all .5s;
-  transform: translate(-50%, 0);
-    
-  display: block;
-  opacity:1;
-  white-space: nowrap;
-}
-
-.main-nav li span:nth-child(2){
-  opacity:0;
-    transform: translate(-50%,100%);
-}
-
-
-.main-nav li:hover span:nth-child(1){
-  opacity:0;
-    transform: translate(-50%,-100%);
-}
-
-.main-nav li:hover span:nth-child(2){
-  opacity:1;
-  transform: translate(-50%, 0);
-}
-.page-header {
-	display: flex;
-	justify-content: space-between;
-	height: 100px;
-}
-.wrapper{
-	margin: 0 auto;
-	padding: 0%;
-}
-
-.home-content{
-	text-align: center;
-	margin-top: 12%;
-}
-/* 問い合わせフォーム */
-
-.big-bg {
-background-image: url(../img/background.png);
-	min-height: 100vh;
-	background-size:cover;
-	background-position:center top;
-	background-repeat:no-repeat;
-}
-
-.textlines {
-    /*border: 2px solid skyblue;*/
-    /*border-radius: 0.67em;*/
-    padding: 0.5em;
-    background-color: snow;
-    width: 40em;
-    height: 250px;
-    font-size: 1em;
-    line-height: 1.2;
-    margin-top: 30px;
-    position: center;
-}
-input {
-   /* input要素全部に対して装飾 */
-   /*background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd);*/
-   background-image: linear-gradient(0deg, #a260bf, #a7d9f5);
-   border: 1px solid #3c7fb1;
-   /*border-radius: 0.3em;*/
-   padding: 0.3em;
-   width: 100px;
-   transform: translate(200px, 340px)
-   
-   }
-input:hover {
-   /* マウスが上に載ったとき */
-   background-image: linear-gradient(0deg, #68d3db, #e5f4fc);
-   border: 1px solid #2c628b;
-}
-input:active {
-   /* 押されたとき */
-   background-image: linear-gradient(180deg, #68d3db, #e5f4fc);
-   border: 1px solid skyblue;
+#mail:active {
+  /* 押されたとき */
+  background-image: linear-gradient(180deg, #68d3db, #e5f4fc);
+  border: 1px solid skyblue;
 }
 
-input[type="button"] {
-   background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd);
-   border: 1px solid #3c7fb1;
-   border-radius: 0.3em;
+#mail[type="button"] {
+  background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd);
+  border: 1px solid #3c7fb1;
+  border-radius: 0.3em;
 }
 
-.button {
-	font-size: 1.3em;
-    position: absolute;
-    margin-top: 75px;
-    top: 40px;
-}
+/*.button {
+ font-size: 1.3em;
+   position: absolute;
+   margin-top: 75px;
+   top: 40px;
+}*/
 
+.button{
+   display: inline-block;
+   padding: 10px 30px 10px 30px;
+   text-decoration: none;
+   color: white;
+   background: #a260bf;
+   font-weight: bold;
+   border-radius: 8px;
+   position: absolute; top:10px; left:440px;
+   font-size: 1.3em;
+}
 .content {
-	position: relative;
+  position: relative;
+   text-align: center;
 }
 
 .background {
-	width: 70%;
-	min-height: 73vh;
-	background-color: rgba(55, 56, 77, 0.9);
-	margin-top: 0;
-	margin: auto;
-	/*border-radius: 0.67em;*/
+  width: 70%;
+  min-height: 73vh;
+  background-color: rgba(55, 56, 77, 0.9);
+  margin-top: 0;
+  margin: 40px auto;
+ border-radius: 8px;
+ position: relative;
 }
+ 
+ 
+ 
+ /*-----------------フッター-------------------*/
+ footer{
+   width: 100%;
+   background-color: #598ca0c8;
+   color: #fff;
+   text-align: center;
+   padding: 30px 0;
+ 
+   position: absolute;/*←絶対位置*/
+   bottom: 0; /*下に固定*/
+
+   margin-top: 60px;
+ }
+ footer {
+   position: sticky;
+   top: 100vh;
+ }
