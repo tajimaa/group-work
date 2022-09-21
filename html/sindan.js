@@ -42,7 +42,7 @@ function anser(num) {
 
     //ansers(合計スコア)のチェック
     //if (ansers > 100000) ansers = 100000; //上限値
-    if (ansers <= -1) {
+    if (answers <= -1) {
         game_over(); //不具合
     } else {
 
