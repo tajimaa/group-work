@@ -13,7 +13,7 @@ setReady();
 //初期設定
 function setReady() {
     count = 0; //問題番号
-    ansers = 0; //回答記録
+    answers = 0; //回答記録
 
     //最初の問題
     sindan();
@@ -25,23 +25,23 @@ function sindan() {
     //選択肢
     s="";
     for (n = 1;n <= q_sel;n++){
-        s += "<a href='javascript:anser(" + n +")'>" + n + " : " + qa[count][n] + "</a>";
+        s += "<a href='javascript:answer(" + n +")'>" + n + " : " + qa[count][n] + "</a>";
     }
     document.getElementById("text_s").innerHTML = s;
 
 }
 //回答表示
-function anser(num) {
+function answer(num) {
     var s;
     s = "設問" + (count + 1) + ":";
     //スコアの増分
-    ansers += qa[count][num + q_sel];
+    answers += qa[count][num + q_sel];
     //結果表示
     if (qa[count][num + q_sel] >= 0) s += "+";
     s += qa[count][num + q_sel];
 
-    //ansers(合計スコア)のチェック
-    //if (ansers > 100000) ansers = 100000; //上限値
+    //answers(合計スコア)のチェック
+    //if (answers > 100000) answers = 100000; //上限値
     if (answers <= -1) {
         game_over(); //不具合
     } else {
@@ -52,7 +52,7 @@ function anser(num) {
             sindan();
         }else {
              //終了　デスクトップpc表示
-            if (ansers >= 101500) {
+            if (answers >= 101500) {
                 s = "dpすげーはいぱ";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
@@ -61,7 +61,7 @@ function anser(num) {
                 s += "【<a href = 'kekka1.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
-            } else if(ansers >= 101000) {
+            } else if(answers >= 101000) {
                 s = "dpすげー";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
@@ -70,7 +70,7 @@ function anser(num) {
                 s += "【<a href = 'kekka2.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
-            } else if(ansers >= 100000) {
+            } else if(answers >= 100000) {
                 s = "dpそこそこぱそこん";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
@@ -80,7 +80,7 @@ function anser(num) {
                 document.getElementById("text_s").innerHTML = s;
 
                 //ノートとデスクトップ表示
-            } else if(ansers >= 51500) {
+            } else if(answers >= 51500) {
                 s = "dnpすげーはいぱ";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
@@ -89,7 +89,7 @@ function anser(num) {
                 s += "【<a href = 'kekka4.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
-            } else if(ansers >= 51000) {
+            } else if(answers >= 51000) {
                 s = "dnpすげー";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
@@ -98,7 +98,7 @@ function anser(num) {
                 s += "【<a href = 'kekka5.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
-            } else if(ansers >= 50000) {
+            } else if(answers >= 50000) {
                 s = "dnpそこそこぱそこん";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
@@ -108,7 +108,7 @@ function anser(num) {
                 document.getElementById("text_s").innerHTML = s;
 
                 //ノート表示
-            } else if(ansers >= 1500) {
+            } else if(answers >= 1500) {
                 s = "npすげーはいぱ";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
@@ -117,7 +117,7 @@ function anser(num) {
                 s += "【<a href = 'kekka7.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
-            } else if(ansers >= 1000) {
+            } else if(answers >= 1000) {
                 s = "npすげー";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
