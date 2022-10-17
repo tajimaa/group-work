@@ -2,7 +2,7 @@
 qa = new Array();
 qa[0] = ["どのpcを購入予定ですか？","ノートpc。<br><br>","デスクトップpc。<br><br>","どちらでもよい。", 50000, 100000, 0];
 qa[1] = ["今回購入を検討しているpcの予算はどれくらいですか?<br>","安いほうがいい。<br><br>","中間ほどがいい。<br><br>","値段は問わない。<br>", 200, 500, 1000];
-qa[2] = ["以下の中で、最もあてはまるものを選んでください","日常的な調べごとやオンラインショッピング、事務作業などで使う最低限の性能のpc。。<br><br>","動画閲覧やコーディングなどで使う、中程度の性能のpc。<br><br>","写真編集や動画制作、オンラインpcゲームなどで使う高い性能のpc。<br>", 200, 500, 1000];
+qa[2] = ["以下の中で、最もあてはまるものを選んでください","日常的な調べごとやオンラインショッピング、事務作業などで使う最低限の性能のpc。<br><br>","動画閲覧やコーディングなどで使う、中程度の性能のpc。<br><br>","写真編集や動画制作、オンラインpcゲームなどで使う高い性能のpc。<br>", 200, 500, 1000];
 
 
 //初期設定
@@ -57,7 +57,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka1.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -66,7 +66,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka2.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -75,7 +75,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka3.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -85,7 +85,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka4.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -94,7 +94,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka5.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -103,7 +103,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka6.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -113,7 +113,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka7.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -122,7 +122,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href = 'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka8.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
 
@@ -131,7 +131,7 @@ function answer(num) {
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
-                s += "【<a href =  'javascript:setReady()'>同じ問題を最初から</a>】";
+                s += "【<a href =  'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka9.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
             }   

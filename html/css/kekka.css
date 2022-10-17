@@ -1,0 +1,137 @@
+/*========= particle js ‚ğ•`‰æ‚·‚éƒGƒŠƒAİ’è ===============*/
+
+#particles-js {
+    position: fixed; /*•`‰æŒÅ’è*/
+    z-index: -1; /*•`‰æ‚ğˆê”Ô‰º‚É*/
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 58, 71); /*”wŒiF*/
+  }
+  
+  #wrapper {
+    position: relative; /*•`‰æ‚ğ#particles-js‚æ‚è‚àã‚É‚·‚é‚½‚ßposition:relative;‚ğw’è*/
+    z-index: 1; /*z-index‚Ì”š‚ğ‘å‚«‚­‚·‚é‚±‚Æ‚Å•`‰æ‚ğ#particles-js‚æ‚è‚àã‚É*/
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+  }
+  
+  
+  /*------------------------------HTML----------------------------*/
+  
+  html{
+      font-size: 100%;
+    color: rgb(255, 251, 251);
+  }
+  body {
+      font-family: "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+      line-height: 1.8;
+      color: rgb(249, 249, 249);
+      height: 100%;
+  }
+  
+  /*-----------------------------ƒwƒbƒ_[--------------------*/
+  .logo {
+      width: 150px;
+      margin-top: 20px;
+      margin-left: 30px;
+  }	
+  .main-nav{
+      display: flex;
+      font-size: 1.25rem;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      list-style: none;
+  }
+  
+  .main-nav li a{
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      line-height:1;
+  }
+  
+  .main-nav li{
+      margin-bottom:0px;
+  }
+  
+  .main-nav li a{
+      
+    position: relative;
+      
+    overflow: hidden;
+    padding:20px 80px;
+  }
+  
+  .main-nav li span{
+      
+    position: absolute;
+    left: 50%;
+    top:0;
+      
+    transition: all .5s;
+    transform: translate(-50%, 0);
+      
+    display: block;
+    opacity:1;
+    white-space: nowrap;
+  }
+  
+  .main-nav li span:nth-child(2){
+    opacity:0;
+      transform: translate(-50%,100%);
+  }
+  
+  .main-nav li:hover span:nth-child(1){
+    opacity:0;
+      transform: translate(-50%,-100%);
+  }
+  
+  .main-nav li:hover span:nth-child(2){
+    opacity:1;
+    transform: translate(-50%, 0);
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+/*-----------------ƒy[ƒW–{•¶-------------------*/
+
+.sample1 {
+    margin:10px; 
+    border:5px solid black;
+    background-color:gray;
+    width:800px;
+    margin-left:350px;
+
+}
+.kotira {
+  margin:10px;
+  padding-left:160px;
+}
+.pcname{
+  padding-left:00px;
+}
+.price{
+  padding-left:100px;
+}
+  
+
+/*-----------------ƒtƒbƒ^[-------------------*/
+footer{
+    width: 100%;
+    background-color: #598ca0c8;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  
+    position: absolute;/*©â‘ÎˆÊ’u*/
+    bottom: 0; /*‰º‚ÉŒÅ’è*/
+  }
+  footer {
+    position: sticky;
+    top: 100vh;
+  }
