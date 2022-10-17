@@ -201,7 +201,10 @@ table thead tr{
     border-bottom: 0;
   }
 }
-
+  .kekkabox {
+    display: flex;
+    flex-wrap: wrap;
+  }
 /*-----------------フッター-------------------*/
 footer{
     width: 100%;
