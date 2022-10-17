@@ -104,19 +104,29 @@
     margin:10px; 
     border:5px solid black;
     background-color:gray;
-    width:800px;
-    margin-left:350px;
+    width:1300px;
+    margin-left:130px;
 
 }
 .kotira {
   margin:10px;
-  padding-left:160px;
+  text-align: center;
 }
 .pcname{
-  padding-left:00px;
+  padding-left:100px;
 }
 .price{
   padding-left:100px;
+}
+#rink {
+  font-size: 25px;
+  padding-left: 40%;
+}
+#np {
+  padding-left: 100px;
+}
+#npsoko {
+  padding-left: 70px;
 }
 /*------------結果ページの性能表--------------*/
 
