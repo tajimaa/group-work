@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
     <link href="https://assets.codepen.io/6329135/reset04.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>KaeruPc</title>
@@ -40,19 +41,49 @@
     <svg style="display: block; height: 0; width: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <defs>
           <filter id="goo">
-              <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
-              <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
-              <feBlend in2="goo" in="SourceGraphic"></feBlend>
-              </filter>
+            <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+            <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+            <feBlend in2="goo" in="SourceGraphic"></feBlend>
+          </filter>
       </defs>
     </svg>
-
+<!------------------->
     <div class="main_content">
-      <h1 id="heading1">こんな方に</h1>
+      <h1 class="test">スペック一覧 </h1>
+      <ul class="pricecards">
+        <li class="pricecard free">
+            <h3>LOW END</h3>
+            <h4>￥94,930~</h4>
+            <div class ="headimg"><img src="img\npそこそこ.webp" ></div>
+            <p>簡単な事務作業やネットサーフィンなどがスムーズに行えるスペック。officeなどのソフトウエアを安定して使える。</p>
+            <a href="kekka9.html">watch</a>
+        </li>
+        <li class="pricecard premium">
+            <h3>HIGH END</h3>
+            <h4>￥680,000~</h4>
+            <div class ="headimg"><img src="img\np最強.png" ></div>
+            <p>最新技術を使った大規模な3D制作や、最新の高スペックを必要とされるFPSゲームからシミュレーションゲームまで安定したFPSで遊べるスペック。</p>
+            <a href="kekka7.html">watch</a>
+        </li>
+        <li class="pricecard standard">
+            <h3>MIDDLE END</h3>
+            <h4>￥229,900~</h4>
+            <div class ="headimg"><img src="img\npすげー-removebg-preview.png" ></div>
+            <p>最新のfpsゲームやシミュレーションゲームが144hzのゲーミングモニターで扱えるスペック。</p>
+            <a href="kekka8.html">watch</a>
+        </li>
+    </ul>
+    <p>※watchを押すと紹介ページに飛ぶことができます。</p>
+    <p>※上記の値段は 2022/10 時点での値段です。<p>
     </div>
-
+    
+    <div class="vertical">
+      <p>© 2022kaeruPCkoubou</p>
+    </div>
     <!--------------------フッター-------------------->
-    <footer>
+    <footer class="pearent">
+      
+      <a><img src="img/icon.png" width"200px"></a>
       <p><small>&copy; 2022kaeruPCkoubou</small></p>
     </footer>
     
