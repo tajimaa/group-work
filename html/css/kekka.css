@@ -138,6 +138,7 @@ table {
   padding: 0;
   width: 650px;
   table-layout: fixed;
+  margin-top: 20px;
 }
 
 table tr {
@@ -163,7 +164,7 @@ table thead tr{
   color: #000;
 }
 .maker{
-  text-align: right;
+  text-align: left;
   color: #000;
 }
 @media screen and (max-width: 600px) {
@@ -196,7 +197,6 @@ table thead tr{
     border-bottom: 1px solid #bbb;
     display: block;
     font-size: .8em;
-    text-align: right;
     position: relative;
     padding: .625em .625em .625em 4em;
     border-right: none;
@@ -216,6 +216,13 @@ table thead tr{
   .kekkabox {
     display: flex;
     flex-wrap: wrap;
+  }
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: green;
   }
 /*-----------------フッター-------------------*/
 footer{

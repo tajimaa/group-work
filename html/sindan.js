@@ -53,7 +53,7 @@ function answer(num) {
         }else {
              //終了　デスクトップpc表示
             if (answers >= 101500) {
-                s = "dpすげーはいぱ";
+                s = "デスクトップハイエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -62,7 +62,7 @@ function answer(num) {
                 document.getElementById("text_s").innerHTML = s;
 
             } else if(answers >= 101000) {
-                s = "dpすげー";
+                s = "デスクトップミドルPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -71,7 +71,7 @@ function answer(num) {
                 document.getElementById("text_s").innerHTML = s;
 
             } else if(answers >= 100000) {
-                s = "dpそこそこぱそこん";
+                s = "デスクトップローエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -81,7 +81,7 @@ function answer(num) {
 
                 //ノートとデスクトップ表示
             } else if(answers >= 51500) {
-                s = "dnpすげーはいぱ";
+                s = "ノートハイエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -90,7 +90,7 @@ function answer(num) {
                 document.getElementById("text_s").innerHTML = s;
 
             } else if(answers >= 51000) {
-                s = "dnpすげー";
+                s = "ノートミドルPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -99,7 +99,7 @@ function answer(num) {
                 document.getElementById("text_s").innerHTML = s;
 
             } else if(answers >= 50000) {
-                s = "dnpそこそこぱそこん";
+                s = "ノートローエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -109,7 +109,7 @@ function answer(num) {
 
                 //ノート表示
             } else if(answers >= 1500) {
-                s = "npすげーはいぱ";
+                s = "デスクトップ&ノートハイエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -118,7 +118,7 @@ function answer(num) {
                 document.getElementById("text_s").innerHTML = s;
 
             } else if(answers >= 1000) {
-                s = "npすげー";
+                s = "デスクトップ&ノートミドルPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -127,7 +127,7 @@ function answer(num) {
                 document.getElementById("text_s").innerHTML = s;
 
             }else {
-                s = "npそこそこ";
+                s = "デスクトップ&ノートローエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
                 s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
@@ -135,23 +135,23 @@ function answer(num) {
                 s += "【<a href = 'kekka9.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
             }   
-         }
-     }
+        }
+    }
 }
 const text_s = document.getElementById('text_s');
 
 //マウスが要素上に入った時
 text_s.addEventListener('mouseover', () => {
-  
+
     text_s.style.text = '#008000';
-  
+
 }, false);
 
 //マウスが要素上から離れた時
 text_s.addEventListener('mouseleave', () => {
-  
+
     text_s.style.text = '#008000';
-  
+
 }, false);
 
 
