@@ -56,7 +56,7 @@ function answer(num) {
                 s = "デスクトップハイエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka1.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -65,7 +65,7 @@ function answer(num) {
                 s = "デスクトップミドルPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka2.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -74,7 +74,7 @@ function answer(num) {
                 s = "デスクトップローエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka3.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -84,7 +84,7 @@ function answer(num) {
                 s = "ノートハイエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka4.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -93,7 +93,7 @@ function answer(num) {
                 s = "ノートミドルPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka5.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -102,7 +102,7 @@ function answer(num) {
                 s = "ノートローエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka6.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -112,7 +112,7 @@ function answer(num) {
                 s = "デスクトップ&ノートハイエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka7.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -121,7 +121,7 @@ function answer(num) {
                 s = "デスクトップ&ノートミドルPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href = 'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka8.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
@@ -130,7 +130,7 @@ function answer(num) {
                 s = "デスクトップ&ノートローエンドPC";
                 document.getElementById("text_q").innerHTML = s;
                 //次の選択肢
-                s = "【<a href = 'file:///C:/Users/koyama/Desktop/%E9%96%8B%E7%99%BA%E6%AE%B4%E6%89%93/group-work/html/index.html'>前のページに戻る</a>】";
+                s = "【<a href = 'index.html'>前のページに戻る</a>】";
                 s += "【<a href =  'javascript:setReady()'>最初からやり直す</a>】";
                 s += "【<a href = 'kekka9.html'>詳細を見る</a>】";
                 document.getElementById("text_s").innerHTML = s;
