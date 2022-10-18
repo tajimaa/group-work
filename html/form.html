@@ -2,6 +2,7 @@
 <html>
   <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="img/favicon.ico">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://assets.codepen.io/6329135/reset04.css" rel="stylesheet">
@@ -11,7 +12,7 @@
   
   <body>
     <div id="particles-js"></div>
-    <!--------------------ヘッダー---------------------->
+    <!--------------------?w?b?_?[---------------------->
     <header class="page-header ">
       <h1><a href="index.html"><img class= "logo"src="img/icon.png" width: 100px;></a></h1>
       <ul class="main-nav">
@@ -20,18 +21,37 @@
         <li><a href="form.html"><span>Content</span><span>お問い合わせ</span></a></li>
       </ul>
     </header>
-    <!----------------ホームページ本文----------------->
-        <div class="background">
-            <h1 class="content">お問い合わせ</h1>
-            <textarea class="textlines" placeholder="お問い合わせ内容"></textarea><br>
+    <!----------------?z?[???y?[?W?{??----------------->
+      <div class="box_con">
+        <h1 class="heading">お問い合わせフォーム</h1>
+        <form action="mailto:seisaku080@gmail.com" method="post" enctype="text/plain">
+        <table class="formTable">
+        <tr>
             
-            <!--<input type="submit" class="button" value="送信">-->
-            <div style="text-align:center">
-            <a id="mail" href="mailto:KaeruPC@gmail.com?subject=お問い合わせ&amp;body=お問い合わせ内容" class="button">送信</a>
-            </form>
-          </div>
-        </div>
-    <!--------------------フッター-------------------->
+          </tr>
+          <tr>
+            <th>ご用件</th>
+            <td><select name="ご用件">
+                <option value="">選択してください</option>
+                <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                <option value="サイトについて">サイトについて</option>
+              </select></td>
+          </tr>
+          <tr>
+            <th>お名前<span>必須</span></th>
+            <td><input size="20" type="text" name="お名前" /></td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容<br /></th>
+            <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+          </tr>
+        </table>
+        <p class="btn">
+            <span><input type="submit" value="　 確認 　" name="go"/></span>
+        </p>
+      </form>
+  </div>
+    <!--------------------?t?b?^?[-------------------->
     <footer>
       <p><small>&copy; 2022KaeruPCKoubou</small></p>
     </footer>
